@@ -22,7 +22,7 @@ class Demo {
         virtual void compress();
         virtual void setElementDT(float f);
     public:
-        virtual vector<modelel*> run();
+        virtual vector<modelel*> run(string lfp);
         virtual void setDefaultSettings();
 };
 

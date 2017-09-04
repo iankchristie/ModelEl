@@ -66,9 +66,12 @@ int main(int argc, const char * argv[])
                 if(strcmp(argv[k], "Ie")==0) {
                     cDemo.setCurrent(strtof(argv[k+1], NULL));
                 }
+                if(strcmp(argv[k], "lfp")==0) {
+                    logFilePath = strtof(argv[k+1], NULL);
+                }
             }
             cout << "Running at Ie= " << cDemo.getIe() << endl;
-            cDemo.run();
+            cDemo.run(logFilePath);
         }
         if (strcmp(argv[1], "SynapseDemo")==0) {
             intfireleakyel_synapsedemo sDemo;
@@ -80,8 +83,11 @@ int main(int argc, const char * argv[])
                         k++;
                     }
                 }
+                if(strcmp(argv[k], "lfp")==0) {
+                    logFilePath = strtof(argv[k+1], NULL);
+                }
                 sDemo.setDefaultSettings();
-                sDemo.run();
+                sDemo.run(logFilePath);
             }
         }
         if(strcmp(argv[1],"DirectionalSelectivityDemo")==0) {
@@ -126,15 +132,18 @@ int main(int argc, const char * argv[])
                         dsDemo.setSimdown(false);
                     }
                 }
+                if(strcmp(argv[k], "lfp")==0) {
+                    logFilePath = strtof(argv[k+1], NULL);
+                }
             }
             dsDemo.setDefaultSettings();
-            dsDemo.run();
+            dsDemo.run(logFilePath);
         }
     }
     else {
         DirectionalSelectivityDemo demo;
         demo.setDefaultSettings();
-        demo.run();
+        demo.run(logFilePath);
     }
      
     return 0;

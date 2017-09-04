@@ -39,7 +39,7 @@ class DirectionalSelectivityDemo: public Demo {
         //parent stuff
         void setDefaultSettings();
         void compress();
-        vector<modelel*> run();
+        vector<modelel*> run(string lfp);
     
     
         //getters and setters
@@ -84,8 +84,6 @@ class DirectionalSelectivityDemo: public Demo {
 
         bool getSimdown();
         void setSimdown(bool b);
-    
-        
 
 };
 

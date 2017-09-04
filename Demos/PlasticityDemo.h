@@ -32,7 +32,7 @@ class PlasticityDemo: public Demo {
         //constructor
         PlasticityDemo();
         //run
-        vector<modelel*> run();
+        vector<modelel*> run(string lfp);
         //parent
         void setDefaultSettings();
         void compress();

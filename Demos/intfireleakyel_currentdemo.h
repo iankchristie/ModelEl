@@ -25,7 +25,7 @@ class intfireleakyel_currentdemo: public Demo {
         //constructor
         intfireleakyel_currentdemo();
         //parent stuff
-        vector<modelel*> run();
+        vector<modelel*> run(string lfp);
         void setDefaultSettings();
         void compress();
     

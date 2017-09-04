@@ -27,12 +27,12 @@ void intfireleakyel_currentdemo::compress() {
 
 
 #pragma mark run
-vector<modelel*> intfireleakyel_currentdemo::run() {
+vector<modelel*> intfireleakyel_currentdemo::run(string lfp) {
     compress();
     setElementDT(neuron->getDT());
     bool ok = false;
     ofstream outputFile;
-    outputFile.open("/Users/ianchristie/Desktop/Matlab/DemoData/CurrentDemo/CurrentDemo_Data.txt",ios::trunc);
+    outputFile.open(lfp, ios::trunc);
     if(outputFile.is_open()) {
         outputFile <<"time;voltage"<<endl;
         ok = true;

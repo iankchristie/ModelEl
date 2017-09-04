@@ -41,12 +41,12 @@ void PlasticityDemo::compress() {
 }
 
 #pragma mark run
-vector<modelel*> PlasticityDemo::run() {
+vector<modelel*> PlasticityDemo::run(string lfp) {
     compress();
     setElementDT(pre1->getDT());
     bool ok = false;
     ofstream outputFile;
-    outputFile.open("/Users/ianchristie/Desktop/Matlab/DemoData/PlasticityDemo/PlasticityDemo_Data.txt",ios::trunc);
+    outputFile.open(lfp,ios::trunc);
     if(outputFile.is_open()) {
         outputFile <<"time;syn1;syn2;postVoltage"<<endl;
         ok = true;

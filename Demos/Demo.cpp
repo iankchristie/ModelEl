@@ -8,9 +8,9 @@
 
 #include "Demo.h"
 
-vector<modelel*> Demo::run() {
+vector<modelel*> Demo::run(string lfp) {
     vector<modelel*> v;
-    cout << "Demo Run Called" << endl;
+    cout << "Demo Run Called with " << lfp << endl;
     return v;
 }
 

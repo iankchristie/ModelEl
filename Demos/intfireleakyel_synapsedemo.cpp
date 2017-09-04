@@ -35,13 +35,13 @@ void intfireleakyel_synapsedemo::compress() {
 }
 
 #pragma mark run
-vector<modelel*> intfireleakyel_synapsedemo::run() {
+vector<modelel*> intfireleakyel_synapsedemo::run(string lfp) {
     compress();
     setElementDT(preNeuron->getDT());
     
     bool ok = false;
     ofstream outputFile;
-    outputFile.open("/Users/ianchristie/Desktop/Matlab/DemoData/SynapseDemo/SynapseDemo_Data.txt",ios::trunc);
+    outputFile.open(lfp,ios::trunc);
     if(outputFile.is_open()) {
         outputFile <<"time;synapticConductivity;postVoltage"<<endl;
         ok = true;

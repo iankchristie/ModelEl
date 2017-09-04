@@ -42,7 +42,7 @@ public:
     void setDT(float f);
     
     //parent stuff
-    vector<modelel*> run();
+    vector<modelel*> run(string lfp);
     void setDefaultSettings();
     void compress();
     

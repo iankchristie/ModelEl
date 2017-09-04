@@ -101,7 +101,7 @@ void DirectionalSelectivityDemo::compress() {
     
 }
 
-vector<modelel*> DirectionalSelectivityDemo::run() {
+vector<modelel*> DirectionalSelectivityDemo::run(string lfp) {
     if (!simit) {
         return model;
     }
@@ -110,7 +110,7 @@ vector<modelel*> DirectionalSelectivityDemo::run() {
     // TargetVoltage Data
     bool ok = false;
     ofstream outputFile;
-    outputFile.open("/Users/ianchristie/Desktop/Matlab/DemoData/DirectionalSelectivityDemo/DirectionalSelectivityDemo_Data.txt",ios::trunc);
+    outputFile.open(lfp,ios::trunc);
     if(outputFile.is_open()) {
         outputFile << "time;TargetNeuronVoltage"<<endl;;
         ok = true;
@@ -129,7 +129,7 @@ vector<modelel*> DirectionalSelectivityDemo::run() {
     outputFile.close();
     
     ofstream outputFile2;
-    outputFile2.open("/Users/ianchristie/Desktop/Matlab/DemoData/DirectionalSelectivityDemo/DirectionalSelectivityDemo_SpikeData.txt",ios::app);
+    outputFile2.open(lfp,ios::app);
     if(outputFile2.is_open()) {
         cout << "ok";
         outputFile2 << "TargetNeuron;";
