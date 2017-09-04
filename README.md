@@ -35,18 +35,22 @@ We've included a number of demos to get associated with the project:
 * PlasticityDemo - demonstrates change in plasticity of synapses over a training period.
 
 To use run
-'''
+
+`
 ./ModelEl <NameOfDemo>
-'''
+`
+
 to override parameters of the demos you can do so by alternating parameter name and value after the demo name like so
-'''
+
+`
 ./ModelEl <NameOfDemo> <param1> <value1> <param2> <value2> ...
-'''
+`
 
 Doing so will give you a list of spike times from the console. To obtain all time series data provide a lfp (loggingFilePath) like so
-'''
+
+`
 ./ModelEl <NameOfDemo> <param1> <value1> <param2> <value2> lfp <path>
-'''
+`
 
 #### Custom Structure
 If you wish to use a custom MATLAB structure please contact Dr. Stephen Van Hooser at vanhoosr@brandeis.edu for further instructions.
