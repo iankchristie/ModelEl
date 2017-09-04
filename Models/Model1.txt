@@ -1,0 +1,37 @@
+<STRUCT size=[1 9]  fields={ 'modelel', 'logged' } data=
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name' } data=
+          <<'spiketimelistel'><[0]><[0.0001]><[0.0001]><'cell1'>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name' } data=
+          <<'spiketimelistel'><[0]><[0.0001]><[0.2001]><'cell2'>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name' } data=
+          <<'spiketimelistel'><[0]><[0.0001]><[0.2001]><'cell3'>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name' } data=
+          <<'spiketimelistel'><[0]><[0.0001]><[0.4001]><'cell4'>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name', 'Ie', 'V_leak', 'Rm', 'Taum', 'Area', 'V_reset', 'V_threshold', 'V', 'synapse_list', 'V_spike' } data=
+          <<'intfireleakyel'><[0]><[0.0001]><[]><'output'><[0]><[-0.075]><[10000000]><[0.01]><[0.1]><[-0.08]><[-0.055]><[-0.075]><[6  7  8  9]><[0.01]>>
+     /STRUCT>><'T,V'>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name', 'V_rev', 'Gmax', 'G', 'tau1', 'tau2', 'pre', 'post', 'Tpast_ignore', 'plasticity_method', 'plasticity_params' } data=
+          <<'synapset1t2el'><[0]><[0.0001]><[]><''><[0]><[3e-09]><[0]><[0.001]><[0.05]><[1]><[5]><[1]><'synapseel_stdp'><<STRUCT size=[1 1]  fields={ 'Gmax_max', 'Gmax_min', 'classic_stdp' } data=
+               <<[5e-09]><[0]><[1]>>
+          /STRUCT>>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name', 'V_rev', 'Gmax', 'G', 'tau1', 'tau2', 'pre', 'post', 'Tpast_ignore', 'plasticity_method', 'plasticity_params' } data=
+          <<'synapset1t2el'><[0]><[0.0001]><[]><''><[0]><[3e-09]><[0]><[0.001]><[0.05]><[2]><[5]><[1]><'synapseel_stdp'><<STRUCT size=[1 1]  fields={ 'Gmax_max', 'Gmax_min', 'classic_stdp' } data=
+               <<[5e-09]><[0]><[1]>>
+          /STRUCT>>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name', 'V_rev', 'Gmax', 'G', 'tau1', 'tau2', 'pre', 'post', 'Tpast_ignore', 'plasticity_method', 'plasticity_params' } data=
+          <<'synapset1t2el'><[0]><[0.0001]><[]><''><[0]><[3e-09]><[0]><[0.001]><[0.05]><[3]><[5]><[1]><'synapseel_stdp'><<STRUCT size=[1 1]  fields={ 'Gmax_max', 'Gmax_min', 'classic_stdp' } data=
+               <<[5e-09]><[0]><[1]>>
+          /STRUCT>>>
+     /STRUCT>><[]>>
+     <<<STRUCT size=[1 1]  fields={ 'type', 'T', 'dT', 'spiketimes', 'name', 'V_rev', 'Gmax', 'G', 'tau1', 'tau2', 'pre', 'post', 'Tpast_ignore', 'plasticity_method', 'plasticity_params' } data=
+          <<'synapset1t2el'><[0]><[0.0001]><[]><''><[0]><[3e-09]><[0]><[0.001]><[0.05]><[4]><[5]><[1]><'synapseel_stdp'><<STRUCT size=[1 1]  fields={ 'Gmax_max', 'Gmax_min', 'classic_stdp' } data=
+               <<[5e-09]><[0]><[1]>>
+          /STRUCT>>>
+     /STRUCT>><[]>>
+/STRUCT>
